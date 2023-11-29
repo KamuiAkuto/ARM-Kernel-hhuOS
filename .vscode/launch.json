@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug (gdb) Lin",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/myos.elf",
+            "preLaunchTask": "Run C++ project",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "miDebuggerServerAddress": "localhost:1234",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "aarch64-none-elf-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "C++ Debug (gdb) Win",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/myos.elf",
+            "preLaunchTask": "Run C++ project",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "miDebuggerServerAddress": "localhost:1234",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "aarch64-none-elf-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

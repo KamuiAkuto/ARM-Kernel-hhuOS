@@ -1,0 +1,29 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "cstdint": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "atomic": "cpp",
+        "cwchar": "cpp",
+        "list": "cpp",
+        "exception": "cpp",
+        "iterator": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "streambuf": "cpp",
+        "*.tcc": "cpp",
+        "iostream": "cpp"
+    },
+    "cSpell.words": [
+        "TPIDR"
+    ]
+}

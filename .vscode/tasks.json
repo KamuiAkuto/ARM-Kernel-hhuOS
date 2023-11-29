@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ project",
+            "type": "shell",
+            "group": "build",
+            "command": "cd ./build && cmake build .."
+        },
+        {
+            "label": "Run C++ project",
+            "type": "shell",
+            "command": "cd ./build && echo Starting QEMU && qemu-system-aarch64 -machine virt,virtualization=off,secure=off -m 1G -cpu cortex-a57 -kernel myos.elf -gdb tcp::1234 -S",
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^(Starting QEMU)",
+                    "line": 1,
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^(Starting QEMU)",
+                    "endsPattern": "^(Starting QEMU)"
+                }
+            }
+        },
+        {
+            "label": "Build CMake",
+            "type": "shell",
+            "group": "build",
+            "command": "cd ./build && cmake build .."
+        },
+    ]
+}

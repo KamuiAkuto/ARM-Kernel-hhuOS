@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Aarch64Linux",
+        "compilers": {
+            "C": "/usr/share/arm-gnu/bin/aarch64-none-elf-gcc",
+            "CXX": "/usr/share/arm-gnu/bin/aarch64-none-elf-g++",
+            "ASM":"/usr/share/arm-gnu/bin/aarch64-none-elf-as"
+        },
+        "cmakeSettings": {
+            "CMAKE_LINKER" : "/usr/share/arm-gnu/bin/aarch64-none-elf-ld"
+        }
+    },
+    {
+        "name": "Aarch64Windows",
+        "compilers": {
+            "C": "aarch64-none-elf-gcc",
+            "CXX": "aarch64-none-elf-g++",
+            "ASM": "aarch64-none-elf-as"
+        },
+        "cmakeSettings": {
+            "CMAKE_LINKER" : "C:/Program Files (x86)/Arm GNU Toolchain aarch64-none-elf/11.3 rel1/bin/aarch64-none-elf-ld.exe"
+        }
+    }
+]
