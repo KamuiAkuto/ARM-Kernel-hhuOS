@@ -1,3 +1,12 @@
+Diese Repo soll als Beispiel dienen für Grundfunktionen von einem ARM Kerns für die Entwicklung eines ARM Kernels. Der Code bassiert drauf wie ich die ARM Dokumentation verstanden habe und wurde getestet. Jedoch gibt es keine Garantie das ich die Dokumentation zu 100% richtig verstanden habe.
+
+Genutzt werden hier:
+- Generic Timer
+- Generic Intertupt Controller
+- Context Switching
+- SVC (SWI)
+- UART PL011
+
 # Compiler
 
 Für das Compiling muss der ARM Compiler installiert sein und die Compiler Pfade in .vscode/cmake-kits.json müssen auf die installierten Compiler zeigen.
